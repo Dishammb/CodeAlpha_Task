@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">LU<span>M</span>IÈRE</div>
+  <div class="header-count" id="headerCount">24 FRAMES</div>
+</header>
+
+<section class="hero">
+  <h1 class="hero-title">
+    Visual<br><em>Archive</em>
+  </h1>
+  <p class="hero-sub">A curated collection of photographic moments — light, form, and atmosphere.</p>
+</section>
+
+<div class="filters-wrap">
+  <span class="filter-label">Category —</span>
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="nature">Nature</button>
+  <button class="filter-btn" data-filter="urban">Urban</button>
+  <button class="filter-btn" data-filter="portrait">Portrait</button>
+  <button class="filter-btn" data-filter="abstract">Abstract</button>
+  <span class="fx-label">Filter —</span>
+  <button class="fx-btn active" data-fx="none">Original</button>
+  <button class="fx-btn" data-fx="mono">Mono</button>
+  <button class="fx-btn" data-fx="warm">Warm</button>
+  <button class="fx-btn" data-fx="cool">Cool</button>
+  <button class="fx-btn" data-fx="fade">Fade</button>
+  <button class="fx-btn" data-fx="blush">Blush</button>
+</div>
+
+<div class="gallery-wrap">
+  <div class="gallery-grid" id="galleryGrid"></div>
+</div>
+
+<footer>
+  <div class="footer-logo">LUMIÈRE</div>
+  <div class="footer-note">← → NAVIGATE · ESC CLOSE · CLICK TO EXPAND</div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-backdrop" id="lbBackdrop"></div>
+  <button class="lb-close" id="lbClose">✕</button>
+  <div class="lb-container">
+    <button class="lb-nav" id="lbPrev">&#8592;</button>
+    <div class="lb-media" id="lbMedia">
+      <img id="lbImg" src="" alt="">
+      <div class="lb-caption">
+        <span class="lb-title" id="lbTitle"></span>
+        <span class="lb-counter" id="lbCounter"></span>
+      </div>
+    </div>
+    <button class="lb-nav" id="lbNext">&#8594;</button>
+  </div>
+</div>
+
+<script src="gallery.js"></script>
+</body>
+</html>
