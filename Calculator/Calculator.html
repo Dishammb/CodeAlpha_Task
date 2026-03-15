@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calc-shell">
+  <div class="calc">
+    <div class="brand">CALCULATOR </div>
+    <div class="screen-wrap">
+      <div class="expr" id="expr"></div>
+      <div class="display" id="display">0</div>
+    </div>
+    <div class="grid">
+      <button class="btn btn-clear" data-action="clear">AC</button>
+      <button class="btn btn-util" data-action="sign">+/−</button>
+      <button class="btn btn-util" data-action="percent">%</button>
+      <button class="btn btn-op" data-action="op" data-val="÷">÷</button>
+
+      <button class="btn btn-num" data-action="num" data-val="7">7</button>
+      <button class="btn btn-num" data-action="num" data-val="8">8</button>
+      <button class="btn btn-num" data-action="num" data-val="9">9</button>
+      <button class="btn btn-op" data-action="op" data-val="×">×</button>
+
+      <button class="btn btn-num" data-action="num" data-val="4">4</button>
+      <button class="btn btn-num" data-action="num" data-val="5">5</button>
+      <button class="btn btn-num" data-action="num" data-val="6">6</button>
+      <button class="btn btn-op" data-action="op" data-val="−">−</button>
+
+      <button class="btn btn-num" data-action="num" data-val="1">1</button>
+      <button class="btn btn-num" data-action="num" data-val="2">2</button>
+      <button class="btn btn-num" data-action="num" data-val="3">3</button>
+      <button class="btn btn-op" data-action="op" data-val="+">+</button>
+
+      <button class="btn btn-num btn-zero" data-action="num" data-val="0">0</button>
+      <button class="btn btn-num" data-action="decimal">.</button>
+      <button class="btn btn-eq" data-action="equals">=</button>
+    </div>
+    <div class="keyboard-hint">keyboard supported</div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

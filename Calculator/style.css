@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Share+Tech+Mono&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.calc-shell{
+  display:flex;justify-content:center;align-items:center;
+  padding:2.5rem 1rem;font-family:'Nunito',sans-serif;
+}
+.calc{
+  width:320px;
+  background:#fdf6ff;
+  border-radius:28px;
+  padding:24px 20px 22px;
+  border:1.5px solid #e8d8f5;
+}
+.brand{
+  font-family:'Nunito',sans-serif;
+  font-size:10px;
+  letter-spacing:3px;
+  color:#c9aee0;
+  text-align:center;
+  margin-bottom:14px;
+  text-transform:uppercase;
+  font-weight:600;
+}
+.screen-wrap{
+  background:#fff;
+  border-radius:18px;
+  padding:16px 18px 12px;
+  margin-bottom:18px;
+  border:1.5px solid #ecdcf8;
+}
+.expr{
+  font-family:'Share Tech Mono',monospace;
+  font-size:12px;
+  color:#c4a8dc;
+  min-height:16px;
+  text-align:right;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  margin-bottom:6px;
+}
+.display{
+  font-family:'Nunito',sans-serif;
+  font-size:38px;
+  font-weight:700;
+  color:#7c4fa0;
+  text-align:right;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  line-height:1;
+  transition:color 0.1s;
+}
+.display.flash{color:#b07fd0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.btn{
+  height:62px;
+  border:none;
+  border-radius:16px;
+  font-family:'Nunito',sans-serif;
+  font-size:19px;
+  font-weight:700;
+  cursor:pointer;
+  transition:transform 0.08s,filter 0.08s;
+  display:flex;align-items:center;justify-content:center;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(0.92);filter:brightness(0.93)}
+.btn-num{background:#f0e8fc;color:#7c4fa0}
+.btn-num:hover{background:#e8dcf8}
+.btn-op{background:#ffd6ec;color:#c0457a}
+.btn-op:hover{background:#ffcae4}
+.btn-eq{background:#a87bcf;color:#fff}
+.btn-eq:hover{background:#9a6cc4}
+.btn-clear{background:#ffd6d6;color:#c04545}
+.btn-clear:hover{background:#ffcaca}
+.btn-zero{grid-column:span 2}
+.btn-util{background:#d6f0ff;color:#3a7ab0}
+.btn-util:hover{background:#c8e8fc}
+.keyboard-hint{
+  text-align:center;
+  font-size:10px;
+  color:#d4b8e8;
+  margin-top:12px;
+  letter-spacing:1px;
+  font-family:'Nunito',sans-serif;
+  font-weight:600;
+}
